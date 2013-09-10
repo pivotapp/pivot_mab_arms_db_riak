@@ -6,7 +6,8 @@ basic_test() ->
   ok = riakou:start(),
   riakou:start_link(<<"riak://localhost">>),
 
-  timer:sleep(50),
+  % We have to wait for us to connect to riak... :/
+  timer:sleep(200),
 
   Env = <<"test">>,
   App = <<"app">>,
