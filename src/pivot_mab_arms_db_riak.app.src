@@ -1,0 +1,12 @@
+{application, pivot_mab_arms_db_riak, [
+  {id, "pivot_mab_arms_db_riak"},
+  {description, "Riak backend for pivot mab arms"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications, [
+    kernel,
+    stdlib,
+    riakou
+  ]},
+  {env, []}
+]}.

@@ -1,0 +1,5 @@
+services:
+  - riak
+language: erlang
+otp_release:
+  - R16B
